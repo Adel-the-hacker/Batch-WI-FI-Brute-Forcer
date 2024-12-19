@@ -280,7 +280,7 @@
 		call colorchar.exe /0b " Processing passlist..."
 		echo.
 		set /a password_number=0
-		for /f "tokens=1" %%a in ( passlist.txt ) do (
+		for /f "tokens=1" %%a in ( passlist_raw.txt ) do (
 			set /a password_number=!password_number!+1
 		)
 		cls
